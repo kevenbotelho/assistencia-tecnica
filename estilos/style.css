@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 1000px){
+@media (max-width: 960px){
     nav div, nav aside p, main{
         display: none;
     }
