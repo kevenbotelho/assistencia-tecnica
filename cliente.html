@@ -3,108 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Ia Sistem</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-            border: none;
-            text-decoration: none;
-            list-style-type: none;
-        }
-        body{
-            background-color: #1d1f78;
-            height: 100vh;
-        }
-
-        /*conta usuario*/
-        nav{
-            max-width: 25vw;
-            height: 100vh;
-            padding: 10px;
-            position: fixed;
-            float: left;
-        }
-        nav section#conta , main iframe#conteudo{
-            padding: 20px;
-            border-radius: 20px;
-        }
-        nav section#conta{
-            background-color: white;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            border: 1px solid red;
-
-            max-width: 200px;
-        }
-        nav section#conta img{
-            max-width: 50px;
-        }
-
-        /*navegação de paginas*/
-        nav section#navegacao{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: left;
-            color: white;
-            padding: 20px;
-        }
-        nav section#navegacao ul#itens-navegacao li{
-            padding-bottom: 20px;
-        }
-
-        /*conteudo principal*/
-        main{ 
-            height: 96vh;
-            float: right;
-            border-left: 2px solid white;
-        }
-        main iframe#conteudo{
-            overflow: auto;
-            width: 75vw;
-            display: block;
-            background-color: white;
-            height: 96vh;
-            margin: 20px;
-            
-        }
-        main iframe#conteudo img{
-            display: block;
-            margin: auto;
-            width: 700px;
-        }
-        main iframe#conteudo h1{
-            text-align: center;
-        }
-        main iframe#conteudo p{
-            text-align: center;
-            padding-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <nav>
-        <section id="conta">
-            <img src="https://images.vexels.com/media/users/3/140800/isolated/lists/86b482aaf1fec78a3c9c86b242c6ada8-avatar-de-perfil-de-homem.png" alt="">
-            <p id="nome-usuario">MATHEUS RIBEIRO - TÉCNICO</p>
-        </section>
-        <section id="navegacao">
-            <ul id="itens-navegacao">
-                <li>Cadastro de Clientes</li>
-                <li>Solicitação de Serviços</li>
-                <li>Ordens de Serviço</li>
-                <li>Fornecedores</li>
-                <li>Diagnóstico IA</li>
-            </ul>
-        </section>
+        <div>
+            <section id="conta">
+                <img src="https://images.vexels.com/media/users/3/140800/isolated/lists/86b482aaf1fec78a3c9c86b242c6ada8-avatar-de-perfil-de-homem.png" alt="">
+                <p id="nome-usuario">MATHEUS RIBEIRO <span style="display: block; text-align: center;">TÉCNICO</span></p>
+            </section>
+            <section id="navegacao">
+                <ul id="itens-navegacao">
+                    <li>
+                        <a href="iframe/cadastro-clientes.html" target="ifr">
+                            <img class="icones" src="imagens/icones/1.png" alt="">
+                            Cadastro de Clientes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iframe/solicitacao-de-servicos.html" target="ifr">
+                            <img class="icones" src="imagens/icones/2.png" alt="">
+                            Solicitação de Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iframe/ordens-de-servico.html" target="ifr">
+                            <img class="icones" src="imagens/icones/3.png" alt="">
+                            Ordens de Serviço
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iframe/fornecedores.html" target="ifr">
+                            <img class="icones" src="imagens/icones/4.png" alt="">
+                            Fornecedores
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iframe/diagnostico-ia.html" target="ifr">
+                            <img class="icones" src="imagens/icones/5.png" alt="">
+                            Diagnóstico IA
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <aside>
+            <p>DESCONECTAR-SE</p>
+        </aside>
     </nav>
     <main>
-        <iframe src="cadastro-clientes.html" frameborder="0" id="conteudo">
+        <iframe name="ifr" src="preload.html" frameborder="0" id="conteudo">
         </iframe>
     </main>
 </body>

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    color: white;
+}
+body{
+    background-color: #1d1f78;
+    height: 100vh;
+}
+
+/*nav*/
+nav{
+    display: block;
+    float: left;
+    height: 100vh;
+    width: 25vw;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    
+    overflow: auto;
+}
+nav section#conta{
+    background-color: white;
+    width: 90%;
+
+    margin: auto;
+    margin-bottom: 50px;
+
+    padding: 7px ;
+    border-radius: 15px;
+
+    display: flex;align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+nav section#conta img{
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 15px;
+}
+nav section#conta p{
+    font-size: 10px;
+
+}
+nav section#navegacao{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    margin: 20px 0;
+}
+nav section#navegacao ul li{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+nav section#navegacao ul li img{
+    width: 20px;
+}
+nav aside{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+nav aside p{
+    text-align: center;
+    color: white;
+}
+/*conteudo*/
+main{
+    float: right;
+    border-left: 1px solid white;
+    height: 100vh;
+    width: 75vw;
+    padding: 20px;
+}
+main iframe{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
