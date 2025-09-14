@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ia Sistem</title>
     <style>
+        @media (max-width: 1000px){
+            nav div, nav aside p, main{
+                display: none;
+            }
+            body::after , nav div::after{
+                display: block;
+                content: 'ABRA NO COMPUTADOR';
+                color: red;
+            }
+        }
         *{
             margin: 0;
             padding: 0;
