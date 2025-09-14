@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@media (max-width: 900px){
+    nav div, nav aside p, main{
+        display: none;
+    }
+    body::after , nav div::after{
+        display: block;
+        content: 'ABRA NO COMPUTADOR';
+        color: red;
+    }
+}
 *{
     margin: 0;
     padding: 0;
