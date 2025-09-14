@@ -6,19 +6,105 @@
     <title>Document</title>
     <style>
         body{
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                overflow: hidden;
+
         }
-        h1{
-            color: #1d1f78;
+        header{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header input[type="search"]{
+            border-radius: 20px;
+            padding: 10px;
+
+            width: 20%;
+        }
+        nav{
+            text-align: right;
+            border: 1px solid black;
+        }
+        nav button.oc{
+            padding: 10px;
+        }
+        main table{
+            margin-top: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+            width: 100%;
+        }
+        main table td , main table th{
+            padding: 10px;
+            text-align: center;
+        }
+        main table th{
+            color: red;
+            font-size: 25px;
+        }
+        tr:nth-child(even) {
+            background-color: #c0c0c0; 
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff; 
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Ordem de serviço</h1>
+        <input type="search" name="" id="">
+    </header>
+    <nav>
+        <button class="oc">
+            ABERTAS
+        </button>
+        <button class="oc">
+            FECHADAS
+        </button>
+        <input type="date" name="" id="">
+    </nav>
+    <main>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>CLIENTE</th>
+                <th>STATUS</th>
+            </tr>
+            <tr>
+                <td>#OS001</td>
+                <td>JOÃO DA SILVA</td>
+                <td>ABERTA</td>
+            </tr>
+            <tr>
+                <td>#OS002</td>
+                <td>JOÃO DA SILVA</td>
+                <td>ABERTA</td>
+            </tr>
+            <tr>
+                <td>#OS003</td>
+                <td>JOÃO DA SILVA</td>
+                <td>ABERTA</td>
+            </tr>
+            <tr>
+                <td>#OS004</td>
+                <td>JOÃO DA SILVA</td>
+                <td>ABERTA</td>
+            </tr>
+            <tr>
+                <td>#OS005</td>
+                <td>JOÃO DA SILVA</td>
+                <td>ABERTA</td>
+            </tr>
+            <tr>
+                <td>#OS006</td>
+                <td>JOÃO DA SILVA</td>
+                <td>ABERTA</td>
+            </tr>
+        </table>
+    </main>
+    <!--
     <h1>ORDENS DE SERVIÇO</h1>
     <h2>Ordens de Serviço (OS)</h2>
     <ul>
@@ -27,5 +113,6 @@
     <li>Detalhes do serviço: técnico responsável, prazos, custo estimado.</li>
     <li>Botão para atualizar o status e anexar laudos/relatórios.</li>
     </ul>
+    -->
 </body>
 </html>
