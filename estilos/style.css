@@ -42,7 +42,7 @@ nav{
     overflow: auto;
 }
 nav section#conta{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.816);
     width: 90%;
 
     margin: auto;
@@ -75,11 +75,12 @@ nav section#navegacao{
 }
 nav section#navegacao ul li{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     padding-bottom: 30px;
 }
 nav section#navegacao ul li img{
     width: 20px;
+    margin-right: 5px;
 }
 nav aside{
     display: flex;

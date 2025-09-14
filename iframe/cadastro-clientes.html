@@ -5,26 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                overflow: hidden;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            list-style-type: none;
         }
-        h1{
+        body{
+            overflow: hidden;
+        }
+        
+        nav ul li{
+            display: inline-block;
+            margin-right: 10px;
+
+            background-color: lightblue;
+            padding: 5px;
+        }
+
+
+        main{
+
+        }
+        main form{
+            border: 1px solid black;
+            max-width: 400px;
+
+            padding: 20px;
+        }
+        main form h2{
             color: #1d1f78;
+        }
+        main form label{
+            padding-bottom: 5px;
+        }
+        main form input{
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        main form label , main form input{
+            display: block;
+        }
+        main form button[type="submit"]{
+            display: block;
+            width: 80%;
+
+            margin: auto;
+            margin-top: 15px;
+
+            background-color: #1d1f78;
+            color: white;
+
+            padding: 10px;
+
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>CADASTRO DE CLIENTES</h1>
-    <h2>Cadastro de clientes</h2>
-    <ul>
-    <li>Formulário para registrar novos clientes (nome, CPF/CNPJ, telefone, endereço, e-mail).</li>
-    <li>Histórico do cliente (chamados anteriores, equipamentos já atendidos).</li>
-    <li>Opção de editar ou excluir cadastro.</li>
-    </ul>
+    <nav>
+        <ul>
+            <li>cadastro</li>
+            <li>historico</li>
+            <li>adicionar ou excluir cadastro</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <form action="" method="get">
+                <h2>CADASTRO DE CLIENTES</h2>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+                <button type="submit">Cadastrar</button>
+                
+            </form>
+        </section>
+        <section>
+
+        </section>
+        <!--<ul>
+        <li>Formulário para registrar novos clientes (nome, CPF/CNPJ, telefone, endereço, e-mail).</li>
+        <li>Histórico do cliente (chamados anteriores, equipamentos já atendidos).</li>
+        <li>Opção de editar ou excluir cadastro.</li>
+        </ul>-->
+        
+    </main>
 </body>
 </html>
