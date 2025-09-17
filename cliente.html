@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/reset.css">
     <title>Ia Sistem</title>
 </head>
 <body>
     <nav>
-        <div>
+        <div class="computador">
             <section id="conta">
-                <img src="https://images.vexels.com/media/users/3/140800/isolated/lists/86b482aaf1fec78a3c9c86b242c6ada8-avatar-de-perfil-de-homem.png" alt="">
+                <img src="imagens/icones/person.png" alt="">
                 <p id="nome-usuario">MATHEUS RIBEIRO <span style="display: block; text-align: center;">TÉCNICO</span></p>
             </section>
             <section id="navegacao">
@@ -48,13 +49,59 @@
                 </ul>
             </section>
         </div>
+        <div class="celular , navegacao">
+            <section id="conta">
+                <img id="person" src="imagens/icones/person.png" alt="">
+            </section>
+            <img id="logo" src="imagens/ia-system.png" alt="">
+        </div>
         <aside>
             <p><a href="index.html">DESCONECTAR-SE</a></p>
         </aside>
     </nav>
     <main>
+        <!--COMPUTADOR-->
         <iframe name="ifr" src="preload.html" frameborder="0" id="conteudo">
         </iframe>
+        <!--COMPUTADOR-->
+
+        <!--CELULAR-->
+        <section id="options">
+            <ul>
+                <a href="iframe/solicitacao-de-servicos.html">
+                    <li>
+                        <img class="icones" src="imagens/icones-azuis/2.png" alt="">
+                        <h2>SOLICITAÇÃO DE SERVIÇO</h2>
+                    </li>
+                </a>
+                <a href="iframe/ordens-de-servico.html">
+                    <li>
+                        <img class="icones" src="imagens/icones-azuis/3.png" alt="">
+                        <h2>ORDENS DE SERVIÇO</h2>
+                    </li>
+                </a>
+                <a href="iframe/fornecedores.html">
+                    <li>
+                        <img class="icones" src="imagens/icones-azuis/4.png" alt="">
+                        <h2>NOSSOS FORNECEDORES</h2>
+                    </li>
+                </a>
+                <a href="iframe/diagnostico-ia.html">
+                    <li>
+                        <img class="icones" src="imagens/icones-azuis/5.png" alt="">
+                        <h2>DIAGNOSTICO IA</h2>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img class="icones" src="imagens/icones-azuis/6.png" alt="">
+                        <h2>FALAR COM O SUPORTE</h2>
+                    </li>
+                </a>
+            </ul>
+        </section>
+        <!--CELULAR-->
+
     </main>
 </body>
 </html>
