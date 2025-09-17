@@ -133,6 +133,9 @@ body{
         
         overflow: auto;
     }
+    nav#celular{
+        display: none;
+    }
     nav div.computador{
         display: block;
     }
