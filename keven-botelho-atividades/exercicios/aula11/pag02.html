@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Fórmulario - Exercicio A</title>
+    <style>
+        *{
+            font-family: "MedievalSharp";
+        }
+        body{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 500px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+        input[type="text"]{
+            border: 1px solid blue;
+        }
+        button{
+            background-color: red;
+            color: white;
+        }
+        h2#titulo-form{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="titulo-form">Cadastro</h2>
+    <form action="">
+        <label for="">Nome: <input type="text" class="campo-texto"></label> <br>
+        <label for="">Cidade:<input type="text" class="campo-texto"></label> <br>
+        <label for="">Email: <input type="Email" class="campo-texto"></label> <br>
+        <button class="btn-enviar">Enviar</button>
+    </form>
+    <button><a href="pag03.html">Abrir exercicio 2</a></button>
+</body>
+</html>

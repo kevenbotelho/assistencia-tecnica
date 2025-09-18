@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: transparent;
+        }
+        body{
+            background-color: rgb(71, 70, 70);
+            color: white;
+            width: 100vw;
+            height: 100vh;
+        }
+        body div#welcome{
+            float: left;
+            width: 60%;
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            background-image: url(https://img.freepik.com/vetores-gratis/composicao-liquida-de-fundo-abstrato_23-2148459417.jpg?semt=ais_hybrid&w=740&q=80);
+            background-position: center;
+            
+        }
+        main{
+            float: right;
+            width: 40%;
+            height: 100vh;
+
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+
+            margin: auto;
+            height: 100vh;
+
+            background-color: white;
+            color: black;
+
+            padding: 0 30px;
+        }
+        main h1{
+            margin: 0 0 25px 0;
+        }
+        main form{
+            display: flex;
+            flex-flow: column nowrap;
+
+            width: 100%;
+        }
+        main form input{
+            display: block;
+        }
+        main form input[type="email"] , main form input[type="password"]{
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px;
+
+            width: 80%;
+
+            margin: auto;
+            margin-bottom: 5px;
+        }
+        main button[type="submit"]{
+            width: 80%;
+            margin-top: 20px;
+            text-align: center;
+
+            background-color: #7355B5;
+            color: white;
+
+            border-radius: 20px;
+
+            padding: 5px;
+
+            font-size: 20px;
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Welcome back!</h1>
+        <p>You can sign in to access with your existing account</p>
+    </div>
+    <main>
+        <h1>Sign In</h1>
+        <form action="">
+            <input type="email" name="" id="" placeholder="Digite o seu e-mail">
+            <input type="password" name="" id="" placeholder="Digite a sua senha">
+            <input type="checkbox" name="" id="">
+            <p>Remember</p>
+            <p>Forgot password</p>
+        </form>
+        <button type="submit">Sign In</button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        main{
+            padding: 20px;
+        }
+        body{
+            background-image: linear-gradient(to bottom, #484a77, black);
+        }
+        section#selecao-personagem{
+            
+        }
+        section#selecao-personagem div#gatos{
+            height: 80vh;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        section#selecao-personagem div#gatos div.imagem-nome{
+            display: flex;
+            flex-flow: column nowrap;
+
+            padding: 0 20px;
+        }
+        section#selecao-personagem div#gatos div.imagem-nome p.nome-do-gato{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+        section#selecao-personagem div#gatos a{
+            text-decoration: none;
+        }
+        section#selecao-personagem div#gatos div.imagem-nome div.img{
+            max-width: 250px;
+            transition: 0.4s;
+        }
+        section#selecao-personagem div#gatos div.imagem-nome div.img:hover{
+            max-width: 350px;
+            transition: 0.4s;
+        }
+        section#selecao-personagem div#gatos div.imagem-nome img{
+            width: 100%;
+            border: 1px solid white;
+
+        }
+        aside span#menor, aside span#maior{
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+
+
+
+        @media (max-width:550px){
+            p{
+                font-size: 5vw !important;
+            }
+        }
+        @media (max-width:490px){
+            .sumir{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="selecao-personagem">
+            <h2 id="titulo-escolha-gato">Escolha seu gato</h2>
+            <div id="gatos">
+                <div class="imagem-nome, sumir">
+                    <div class="img"><img src="personagens/whiskers.jpg" alt=""></div>
+                    <p class="nome-do-gato">Whisker Cats</p>
+                </div>
+                <a href="escolha-gato-super-miau-bros.html">
+                    <div class="imagem-nome">
+                        <div class="img"><img src="personagens/mario.gif" alt=""></div>
+                        <p class="nome-do-gato">Super Miau Bros</p>
+                    </div>
+                </a>
+                <div class="imagem-nome, sumir">
+                    <div class="img"><img src="personagens/meowven.gif" alt=""></div>
+                    <p class="nome-do-gato">Meowven</p>
+                </div>
+            </div>
+        
+        </section>
+    </main>
+    <aside>
+        <span id="menor">&lt;</span>
+        <span id="maior">&gt;</span>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Satisfy;
+        }
+        body{
+            font-size: 30px;
+            background-color: black;
+            color: white;
+        }
+        label{
+            display: block;
+            padding-bottom: 20px;
+        }
+        form{
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+        label{
+        }
+        select{
+            background-color: rgb(221, 77, 202);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        button{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form onsubmit="return testarDoenca()">
+        <label>ESCOLHA SUA DOENÇA</label>
+        <select name="" id="doenca">
+            <option value="PESTE BUBONICA">PESTE BUBONICA</option>
+            <option value="VARIOLA">VARÍOLA</option>
+            <option value="MPOX">MPOX</option>
+        </select>
+        <button type="submit">ENVIAR</button>
+    </form>
+    
+    <script>
+        function testarDoenca(){
+            let doencaEscolhida = document.getElementById('doenca').value;
+            if (doencaEscolhida == "PESTE BUBONICA"){
+                alert("PARABÉNS! SUA DOENÇA ERA SUPER MORTAL PARA A ÉPOCA!");
+            }
+            else if (doencaEscolhida == "VARIOLA"){
+                alert("VARIOLAAAAA")
+            }
+            else if (doencaEscolhida == "MPOX"){
+                alert("SUA DOENÇA É MUITO CRINGE");
+            }
+        }
+    </script>
+</body>
+</html>

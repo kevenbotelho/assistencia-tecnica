@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 110%;
+        }
+        div{
+            border: 1px solid;
+            margin: 20px 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <datalist>
+            <option value="">CS</option>
+        </datalist>
+        <h1>Formularios e elementos</h1>
+        <form action="formulario.html" method="POST">
+            <label for="nome">Digite o seu nome</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email" required >
+            <br>
+            <label for="password">Senha: </label>
+            <input type="password" name="" id="password" required minlength="8">
+            <br>
+            <input type="checkbox" name="" id="bike" value="Bike">
+            <label for="bike">Eu tenho Bicicleta</label>
+            <input type="checkbox" name="" id="moto" value="moto">
+            <label for="bike">Eu tenho moto</label>
+            <br>
+            <textarea name="textogrande" id="textogrande" >
+
+            </textarea>
+            <br> <br> <br>
+
+
+            <input type="checkbox" name="" id="">
+            <label for="">Deseja receber nossas promoçoes</label>
+            <input type="checkbox" name="" id="">
+            <input type="radio" name="" id="">
+            <input type="radio" name="" id="">
+
+
+
+
+
+            <input type="submit" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>
+        <br> <br>
+    </div>
+
+    <div>
+        <h1>Escolha a sua Região</h1>
+        <form action="">
+            <label for="testeid">Escolha sua região</label>
+            <input list="teste1" id="testeid">
+            <datalist id="teste1">
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="São Paulo">SP</option>
+                <option value="Pará">PA</option>
+            </datalist>
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+</body>
+</html>

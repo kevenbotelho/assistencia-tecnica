@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>[type="text{border:;}"]</p>
+    <p>[href$="https"]{border:;} <!--Começa com--></p>
+    <p>[href$=".pdf"]{border:;} <!--termina com--></p>
+    <p>[href$="google"]{border:;} <!--contem com--></p>
+
+    exemplos: <br>
+
+    <pre>
+        &lt;style&gt;
+            [type="submit"]{
+                background-color: green;
+                color; white;
+                padding; 8px;
+                border: none;
+                cursor: pointer;
+            }
+        <br>
+        &lt;/style&gt;
+        &lt;body&gt;
+            &lt;form&gt;
+                &lt;input type="text" placeholder="Digite seu nome"&gt;
+                &lt;input type="submit" value="Enviar"&gt;
+            &lt;form&gt;
+        &lt;/body&gt;
+    </pre>
+
+
+
+
+
+
+<hr>
+
+    exemplos de clçasse e id: <br>
+
+    <pre>
+        &lt;style&gt;
+            #cabeçalho{
+                background-color: yellow;
+                padding: 10px;
+            }
+            .destaque{
+                font-weight: bold;
+                color: red;
+            }
+        <br>
+        &lt;/style&gt;
+        &lt;body&gt;
+        &lt;div id="cabecalho"&gt;Cabeçalho&lt;/div&gt;
+        &lt;p class="destaque"&gt;Texto em destaque&lt;/p&gt;
+        &lt;p&gt;Texto Normal&lt;/p&gt;
+        &lt;/body&gt;
+    </pre>
+    <button><a href="pag02.html">Ir para a página 02</a></button>
+</body>
+</html>

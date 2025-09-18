@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+        body{
+            background-color: rgb(167, 167, 167);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            position: relative;
+            
+            
+        }
+        mark{
+            border: 1px solid;
+        }
+        section{
+            width: 40%;
+            height: 550px;
+            background-color: rgba(255, 255, 255, 0.564);
+            border: 1px solid;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px rgb(92, 92, 92);
+            padding: 30px;
+        }
+        section#um{
+            border-radius: 20px 0 0 20px;
+        }
+        section#dois{
+            border-radius: 0 20px 20px 0;
+            position: relative;
+        }
+        h1, li{
+            padding-bottom: 10px;
+        }
+        img{
+            display: block;
+            width: 100px;
+            margin: auto;
+            border-radius: 20px;
+        }
+        img#marcador{
+            position: absolute;
+            top: -1%;
+            left: 83%;
+        }
+        #icone{
+
+        }
+
+    </style>
+</head>
+<body>
+    <section id="um">
+        <h1 id="titulo">FORMATAÇÃO DE TEXTO</h1>
+        <ul>
+            <li>&lt;b&gt; <del>DESUSO</del></li>
+            <li>Substituido por STRONG</li>
+            <br>
+            <li>i <del>DESUSO</del></li>
+            <li>Substituido por EM </li>
+            <br>
+            <li><u>u</u> - sublinhado</li>
+            <li><mark>mark</mark> - deixa o texto marcado</li>
+            <br>
+            <li>H<sub><mark>2</mark></sub>0 - Se utiliza o sub</li>
+            <li>X<sup><mark>2</mark></sup>+3 - Se utiliza o sup</li>
+            <br>
+            <li>Blockquote - Citações longas</li>
+            <li>q citação curta (entre aspas)</li>
+            <br>
+            <li>pre - deixa a formatação</li>
+        </ul>
+    </section>
+    <section id="dois">
+        <h1>ÂNCORAS</h1>
+        <ul>
+            <li>&lt;a&gt; Link: Clique na imagem do tigrinho: </li>
+            <a href="https://conexaoplaneta.com.br/wp-content/uploads/2024/09/zoo-de-san-diego-celebra-nascimento-de-tigre-de-sumatra-foto-divulgacao-1.jpg"  target="_blank">
+                <img title="Tigrinho" src="https://conexaoplaneta.com.br/wp-content/uploads/2024/09/zoo-de-san-diego-celebra-nascimento-de-tigre-de-sumatra-foto-divulgacao-1.jpg" alt="">
+            </a>
+            <li>Links para email/tel</li>
+            <ul>
+                <li>
+                    &lt;a href="mailto:contato@empresa.com">Enviar agora&lt;/a&gt;
+                </li>
+                <li>
+                    &lt;a href="tel:+551122334455">Ligar Agora&lt;/a>
+                </li>
+            </ul>
+        </ul>
+        <h2>Navegação Interna</h2>  
+        <p>colocar no id e depois chamar na ancora #id </p>
+        <iframe src="https://github.com/?locale=pt-br" frameborder="0"></iframe>
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <img id="marcador" src="https://cdn.pixabay.com/photo/2016/02/16/07/27/ribbon-1202758_640.png" alt="">
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    outline: inherit;
+    color: white;
+    overflow: hidden;
+}
+body{
+    background-color: black;
+    padding: 10px 0;
+    position: relative;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+header h1, h2#titulo-escolha-gato{
+    text-align: center;
+    color: white;
+    font-size: 9vw;
+    font-family: "MedievalSharp";
+    
+}
+header #lua{
+    width: 9vw;
+    
+}
+h2#titulo-escolha-gato{
+    font-size: 6vw;
+}
+
+div#fundo-azul{
+    background-image: linear-gradient(to bottom, #484A77,rgb(0, 0, 0) 90%);
+    border: 10px solid rgb(56, 31, 61);
+    width: 100vw;
+    height: 600px;
+    margin-top: -10px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+div#fundo-azul button{
+    border: 1px solid white;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 17px;
+}
+div#fundo-azul button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+div#fundo-azul button:hover{
+    font-weight: bolder;
+    border: 1px solid white;
+    color: rgb(208, 156, 156);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+
+    transition: 2s;
+}
+button {
+    cursor: pointer;
+    animation: pulsar 2s infinite;
+    transition: transform 0.2s ease;
+}
+
+@keyframes pulsar {
+0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(94, 89, 206, 0.7);
+}
+70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+}
+100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+}
+}
+/*
+aside{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding: 20px;
+}
+aside#duolingo #duolingo{
+    position: fixed;
+    width: 70px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: -100px;
+}
+aside#duolingo #duolingo:hover{
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+aside#texto-generico{
+    display: none;
+    background-color: red;
+}
+aside#texto-generico{
+    display: none;
+    background-color: red;
+}
+    */
