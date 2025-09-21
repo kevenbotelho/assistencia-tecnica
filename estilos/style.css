@@ -18,7 +18,7 @@ body{
 
         margin: auto;
 
-        padding: 7px ;
+        padding: 7px 40px;
 
         display: flex;
         align-items: center;
@@ -87,6 +87,9 @@ body{
 
         width: 40%;
         height: 240px;
+    }
+    main section#options ul a:hover{
+        cursor: pointer;
     }
     main section#options ul li img{
         display: block;
@@ -175,6 +178,9 @@ body{
         color: white;
         font-size: 20px;
         padding-bottom: 30px;
+    }
+    nav section#navegacao ul li a{
+        cursor: pointer;
     }
     nav section#navegacao ul li img{
         width: 20px;
