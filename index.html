@@ -21,7 +21,7 @@
             max-width: 800px;
             margin: auto;
             border-radius: 10px;
-            padding: 0 20px 20px 20px;
+            padding: 0 20px 25px 20px;
         }
         main img#logo{
             display: block;
@@ -39,6 +39,7 @@
             width: 100%;
             border: 1px solid black;
             border-radius: 3px;
+            margin: auto;
             padding: 8px;
         }
         main form label , main form input{
@@ -57,7 +58,7 @@
             margin: auto;
             background-color: #1d1f78;
             color: white;
-            padding: 5px;
+            padding: 8px;
 
             cursor: pointer;
             
@@ -79,7 +80,7 @@
     <main>
         <img id="logo" src="imagens/ia-system.png" alt="logo ia system">
         <h1>Login</h1>
-        <form action="cliente.html" method="get">
+        <form onsubmit="return acesso()">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email">
             <label for="senha">Senha</label>
@@ -89,5 +90,19 @@
         </form>
         <p id="criar">Ainda não tem uma conta? <a href=""><span id="criar-conta">Criar Conta</span></a></p>
     </main>
+    <script>
+        function acesso(){
+            let email = document.getElementById("email").value;
+            let senha = document.getElementById("senha").value;
+            if (email=="admin@gmail.com" && senha=="admin"){
+                window.location.href = "cliente.html";
+                return false
+            }
+            else{
+                alert("Usuário ou senha incorretos");
+                return false
+            }
+            }
+    </script>
 </body>
 </html>

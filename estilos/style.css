@@ -18,7 +18,7 @@ body{
 
         margin: auto;
 
-        padding: 7px ;
+        padding: 7px 40px;
 
         display: flex;
         align-items: center;
@@ -88,6 +88,9 @@ body{
         width: 40%;
         height: 240px;
     }
+    main section#options ul a:hover{
+        cursor: pointer;
+    }
     main section#options ul li img{
         display: block;
         margin: auto;
@@ -117,6 +120,7 @@ body{
         /*background-color: #1d1f78;*/
         background-color: #1d1f78;
         height: 100vh;
+        width: 100vw;
     }
 
     /*nav*/
@@ -137,7 +141,9 @@ body{
         display: none;
     }
     nav div.computador{
-        display: block;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
     nav section#conta{
         background-color: rgba(255, 255, 255, 0.816);
@@ -176,6 +182,9 @@ body{
         color: white;
         font-size: 20px;
         padding-bottom: 30px;
+    }
+    nav section#navegacao ul li a{
+        cursor: pointer;
     }
     nav section#navegacao ul li img{
         width: 20px;
