@@ -149,7 +149,8 @@ body{
         padding: 7px ;
         border-radius: 15px;
 
-        display: flex;align-items: center;
+        display: flex;
+        align-items: center;
         flex-flow: row nowrap;
         justify-content: center;
 
@@ -185,6 +186,7 @@ body{
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-end;
+        cursor: pointer;
     }
     nav aside p{
         text-align: center;
@@ -195,7 +197,7 @@ body{
         float: right;
         border-left: 1px solid white;
         height: 100vh;
-        width: 75vw;
+        width: 70vw;
         padding: 20px;
     }
     main iframe{
