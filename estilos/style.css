@@ -186,11 +186,10 @@ body{
     nav section#navegacao ul li a{
         cursor: pointer;
     }
-    nav section#navegacao ul li img{
+    nav section#navegacao ul li img, nav section#navegacao ul li span{
         width: 20px;
         margin-right: 5px;
     }
-    
     nav aside{
         display: flex;
         flex-flow: column nowrap;
