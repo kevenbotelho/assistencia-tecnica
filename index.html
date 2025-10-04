@@ -80,6 +80,7 @@
     <main>
         <img id="logo" src="imagens/ia-system.png" alt="logo ia system">
         <h1>Login</h1>
+        <!--AO MANDAR O FORMULÁRIO, CHAME A FUNÇÃO ACESSO()-->
         <form onsubmit="return acesso()">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email">
@@ -92,12 +93,16 @@
     </main>
     <script>
         function acesso(){
+            /*GUARDA O QUE O USUARIO DIGITOU NO CAMPO EMAIL"*/
             let email = document.getElementById("email").value;
+            /*GUARDA O QUE O USUARIO DIGITOU NO CAMPO SENHA"*/
             let senha = document.getElementById("senha").value;
+            /*SE O EMAIL FOR ADM... E SE A SENHA FOR ADMIN, ENTÃO ABRA O DOCUMENTO CLIENTE.HTML E NÃO ATUALIZE A PÁGINA*/
             if (email=="admin@gmail.com" && senha=="admin"){
                 window.location.href = "cliente.html";
                 return false
             }
+            /*SE NÃO, DIGA QUE USUARIO OU SENHA ESTÃO INCORRETOS*/
             else{
                 alert("Usuário ou senha incorretos");
                 return false

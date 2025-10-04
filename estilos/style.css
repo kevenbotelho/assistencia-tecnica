@@ -2,16 +2,18 @@
 
 
 /*CELULAR*/
-body{
+    body{
         color: #1d1f78;
         background-color: #1d1f78;
     }
     nav{
         display: block;
     }
+    /*APAGOU O QUE ERA PRA APARECER NO COMPUTADOR*/
     nav div.computador{
         display: none;
     }
+    /*AREA QUE FICA AS INFORM. DO USUARIO E A LOGO*/
     nav .navegacao{
         background-color: white;
         width: 100vw;
@@ -25,46 +27,39 @@ body{
         flex-flow: row nowrap;
         justify-content: space-between;
     }
+    /*INFORMAÇÕES DO USUARIO(POR ENQUANTO ESTA SO A FOTO DELE)*/
     nav .navegacao section#conta{
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
     }
+    /*FOTO DE PERFIL DO USUARIO*/
     nav section#conta > img#person{
         width: 20%;
         border-radius: 50%;
         border: 1px solid black;
         margin-right: 15px;
     }
+    /*LOGO*/
     nav .navegacao img#logo{
         width: 25%;
         margin: -20px 0;
     }
-    nav section#conta ul li{
-        color: white;
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
-    nav section#conta ul li img{
-        width: 20px;
-        margin-right: 5px;
-    }
-    nav aside{
-        display: none;
-    }
+
+    /*CONTEUDO PRINCIPAL - LISTAS DE MENUS*/
     main{
         display: block;
         margin: auto;
         width: 95vw;
         padding-top: 10px;
     }
+    /*RETIROU O BLOCO QUE APARECE AS PAGINAS ABERTAS NO COMPUTADOR*/
     main iframe{
         display: none;
     }
-    main section#options{
 
-    }
+    /*LISTA DE MENUS*/
     main section#options ul{
         display: flex;
         flex-flow: row wrap;
@@ -101,7 +96,7 @@ body{
         text-align: center;
         padding-top: 10px;
     }
-/*CELULAR*/
+/* FIM CELULAR*/
 
 
 
@@ -110,6 +105,7 @@ body{
 
 /*COMPUTADOR*/
 @media (min-width: 960px){
+    /*AS INFORMAÇÕES DO USUARIO QUE É PRA APARECER NO CELULAR, ELE VAI DEIXAR INVISIVEL, POIS É PRA APARECER SÓ NO CELULAR*/
     nav div.celular{
         display: none;
     }
@@ -117,7 +113,6 @@ body{
         color: white;
     }
     body{
-        /*background-color: #1d1f78;*/
         background-color: #1d1f78;
         height: 100vh;
         width: 100vw;
@@ -137,14 +132,12 @@ body{
         
         overflow: auto;
     }
-    nav#celular{
-        display: none;
-    }
     nav div.computador{
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
     }
+    /*INFORMAÇÕES DO USUARIO*/
     nav section#conta{
         background-color: rgba(255, 255, 255, 0.816);
         width: 90%;
@@ -159,18 +152,20 @@ body{
         align-items: center;
         flex-flow: row nowrap;
         justify-content: center;
-
     }
+    /*FOTO DE PERFIL DO USUÁRIO*/
     nav section#conta img{
         width: 50px;
         border-radius: 50%;
         border: 1px solid black;
         margin-right: 15px;
     }
+    /*NOME DO USUARIO*/
     nav section#conta p{
         font-size: 10px;
 
     }
+    /*LISTA DE LINKS MENU*/
     nav section#navegacao{
         display: flex;
         flex-flow: row nowrap;
@@ -186,11 +181,12 @@ body{
     nav section#navegacao ul li a{
         cursor: pointer;
     }
+    /*ICONES DA LISTA DE LINKS MENU*/
     nav section#navegacao ul li img{
         width: 20px;
         margin-right: 5px;
     }
-    
+    /*DESCONECTAR-SE*/
     nav aside{
         display: flex;
         flex-flow: column nowrap;
@@ -201,6 +197,9 @@ body{
         text-align: center;
         color: white;
     }
+
+
+
     /*conteudo*/
     main{
         float: right;
@@ -217,6 +216,7 @@ body{
         border-radius: 15px;
         padding: 20px;
     }
+    /*MENUS QUE APARECEM NO CELULAR*/
     main section#options{
         display: none;
     }
